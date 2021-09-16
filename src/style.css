@@ -13,6 +13,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+  max-width: 50rem;
 }
 
 .author {
@@ -28,6 +29,14 @@ body {
   border-radius: 50%;
 }
 
-h1 {
+.value {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #f4900c;
+}
+
+h1,
+h2,
+h3 {
   text-transform: uppercase;
 }
