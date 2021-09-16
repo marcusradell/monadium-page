@@ -2,9 +2,19 @@ body {
   font-family: "Courier New", Courier, monospace;
   margin: 0;
   font-size: 16px;
-  background: slategray;
+  background: rgb(31, 26, 22);
   min-height: 100vh;
   color: whitesmoke;
+}
+
+h1,
+h2,
+h3 {
+  text-transform: uppercase;
+}
+
+a {
+  color: steelblue;
 }
 
 .content {
@@ -33,10 +43,4 @@ body {
   font-size: 1.25rem;
   font-weight: bold;
   color: #f4900c;
-}
-
-h1,
-h2,
-h3 {
-  text-transform: uppercase;
 }
