@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Profiles</title>
+</head>
+<body>
+    <ul>
+        {% for profile in collections.profile -%}
+        <li><a href="{{ profile.url }}" >{{ profile.data.name }}</a></li>
+        {% endfor -%}
+    </ul>
+</body>
+</html>
