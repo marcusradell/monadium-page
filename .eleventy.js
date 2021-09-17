@@ -4,6 +4,6 @@ module.exports = (config) => {
       input: "src",
       output: "_site",
     },
-    templateFormats: ["liquid", "jpg", "md", "css"],
+    templateFormats: ["njk", "jpg", "md", "css"],
   };
 };
