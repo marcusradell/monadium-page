@@ -1,13 +1,11 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Profiles</title>
-</head>
-<body>
-    <ul>
-        {% for profile in collections.profile -%}
-        <li><a href="{{ profile.url }}" >{{ profile.data.name }}</a></li>
-        {% endfor -%}
-    </ul>
-</body>
-</html>
+---
+layout: base.njk
+title: Profiles
+---
+
+
+<ul>
+    {% for profile in collections.profile -%}
+    <li><a href="{{ profile.url }}" >{{ profile.data.name }}</a></li>
+    {% endfor -%}
+</ul>
