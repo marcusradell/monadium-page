@@ -12,8 +12,8 @@
     "url": "git+https://github.com/marcusradell/monadium-page.git"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Marcus Rådell <marcus@radell.net>",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/marcusradell/monadium-page/issues"
   },
