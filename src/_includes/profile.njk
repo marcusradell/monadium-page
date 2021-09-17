@@ -4,3 +4,10 @@ layout: "base.njk"
 
 <h2>Dream</h2>
 <strong>{{ dream }}</strong>
+
+<h2>Teams</h2>
+<ul>
+    {% for t in collections.team -%}
+    {% if teamIds.includes(t.data.id) %} <li><p><a href="{{ t.url }}" >{{ t.data.name }}</a></p></li> {% endif %}
+    {% endfor -%}
+</ul>
