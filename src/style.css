@@ -17,6 +17,11 @@ a {
   color: steelblue;
 }
 
+.logo-link {
+  text-decoration: none;
+  position: relative;
+}
+
 .content {
   padding: 0 3rem;
   display: flex;

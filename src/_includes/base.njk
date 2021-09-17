@@ -14,11 +14,21 @@
   <body>
     <div class="content">
       <header>
-        <h1>🧡 {{ title }}</h1>
+        <h1><a href="/" class="logo-link">🧡</a> | {{ title }}</h1>
       </header>
       <main>
         {{ content | safe }}
       </main>
+
+      <div>
+        <h2>Navigation</h2>
+
+        <ul>
+          <li><p><a href="/">🧡</a></p></li>
+          <li><p><a href="/profiles">/profiles</a></p></li>
+          <li><p><a href="/teams">/teams</a></p></li>
+        </ul>
+      </div>
     </div>
   </body>
 </html>
