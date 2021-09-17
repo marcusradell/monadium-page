@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Profiles</title>
+</head>
+<body>
+    <ul>
+        {% for profile in collections.profiles -%}
+        <li>{{ profile.data.name }}</li>
+        {% endfor -%}
+    </ul>
+</body>
+</html>

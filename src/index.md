@@ -1,9 +1,7 @@
 ---
-layout: base.njk
 title: Monadium.org
+layout: base.njk
 ---
-
-# 🧡 {{ title }}
 
 _"**The modern alternative to a programming union.**"_
 

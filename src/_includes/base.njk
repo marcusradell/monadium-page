@@ -13,7 +13,12 @@
   </head>
   <body>
     <div class="content">
-      {{ content | safe }}
+      <header>
+        <h1>🧡 {{ title }}</h1>
+      </header>
+      <main>
+        {{ content | safe }}
+      </main>
     </div>
   </body>
 </html>
