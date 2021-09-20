@@ -145,6 +145,7 @@ gigs:
     duration: 10
 
     tags:
+      - JAVASCRIPT
       - REACT
       - GRAPHQL
       - RXJS
