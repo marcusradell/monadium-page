@@ -31,8 +31,10 @@ module.exports = {
             let diffDays = Math.ceil(diff / (1000 * 60 * 60 * 24));
             acc[tag] += diffDays;
           } else {
-            acc[tag] += duration;
+            acc[tag] += duration * 31;
           }
+
+          acc[tag] = Math.ceil(acc[tag] / 365);
 
           return acc;
         }, {});
