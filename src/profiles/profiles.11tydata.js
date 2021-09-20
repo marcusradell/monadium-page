@@ -17,25 +17,35 @@ module.exports = {
         return;
       }
 
-      const result = data.gigs
+      let js = 0;
+
+      const exactDurations = data.gigs
         .flatMap((g) => g.tags.map((t) => [t, g.duration, g.start]))
         .reduce((acc, [tag, duration, start]) => {
           if (!acc[tag]) {
             acc[tag] = 0;
           }
 
+          let durationDays = 0;
+
           if (duration === "ONGOING") {
             let diff = Date.now() - new Date(start);
-            let diffDays = Math.ceil(diff / (1000 * 60 * 60 * 24));
-            acc[tag] += diffDays;
+            durationDays = Math.ceil(diff / (1000 * 60 * 60 * 24));
           } else {
-            acc[tag] += duration * 31;
+            durationDays = duration * 31;
           }
 
-          acc[tag] = Math.ceil(acc[tag] / 365);
+          acc[tag] += durationDays / 365;
 
           return acc;
         }, {});
+
+      const result = Object.fromEntries(
+        Object.entries(exactDurations).map(([_, duration]) => [
+          _,
+          Math.ceil(duration),
+        ])
+      );
 
       return result;
     },
