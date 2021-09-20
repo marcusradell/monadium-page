@@ -15,7 +15,7 @@ layout: "base.njk"
     {% for g in gigs -%}
     <li class="gig">
         <h3>{{g.title}}</h3>
-        <p>{{g.start}} <em>({{g.duration}})</em></p>
+        <p>{{g.start}} <em>({{g.duration}}{% if g.duration !== "ONGOING" %} months{% endif %})</em></p>
         
         <h4>Tags</h4>
         <ul>
