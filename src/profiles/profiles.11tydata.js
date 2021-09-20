@@ -1,6 +1,15 @@
 module.exports = {
   eleventyComputed: {
     title: (data) => data.name,
+    teamIds: (data) => {
+      if (data.gigs === undefined) {
+        return;
+      }
+
+      const result = Array(...new Set(data.gigs.map((g) => g.teamId)));
+
+      return result;
+    },
     gigTags: (data) => {
       if (data.gigs === undefined) {
         return;
