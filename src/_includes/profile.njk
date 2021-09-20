@@ -6,8 +6,8 @@ layout: "base.njk"
 <strong>{{ dream }}</strong>
 
 <h2>Gig tags</h2>
-{%for tag, totalDays in gigTags -%}
-<p>{{tag}}: <{{totalDays}} years</p>
+{%for tag, totalYears in gigTags -%}
+<p>{{tag}}: <{{totalYears}} years</p>
 {% endfor -%}
 
 <h2>Gigs</h2>
