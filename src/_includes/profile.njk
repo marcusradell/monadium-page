@@ -5,6 +5,36 @@ layout: "base.njk"
 <h2>Dream</h2>
 <strong>{{ dream }}</strong>
 
+<h2>Gig tags</h2>
+{%for tag, totalDays in gigTags -%}
+<p>{{tag}}: {{totalDays}} days</p>
+{% endfor -%}
+<h2>Gigs</h2>
+<ol>
+    {% for g in gigs -%}
+    <li class="gig">
+        <h3>{{g.title}}</h3>
+        <p>{{g.start}} <em>({{g.duration}})</em></p>
+        
+        <h4>Tags</h4>
+        <ul>
+        {% for t in g.tags -%}
+        <li><p>{{t}}</p></li>
+        {% endfor -%}
+        </ul>
+
+        <h4>Highligts</h4>
+        <ul>
+        {% for h in g.highlights -%}
+        <li><p>{{h}}</p></li>
+        {% endfor -%}
+        </ul>
+    
+    </li>
+    {% endfor -%}
+</ol>
+
+
 <h2>Teams</h2>
 <ul>
     {% for t in collections.team -%}
