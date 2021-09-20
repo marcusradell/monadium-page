@@ -1,8 +1,14 @@
 ---
 layout: "base.njk"
+pagination:
+    data: profiles
+    size: 1
+    alias: profile
+permalink: "profiles/{{ profile.name | slug }}/"
 ---
 
 <h2>Dream</h2>
+{{name}}
 <strong>{{ dream }}</strong>
 
 <h2>Gig tags</h2>
