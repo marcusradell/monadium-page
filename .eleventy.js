@@ -1,8 +1,9 @@
 module.exports = (config) => {
-  // config.addCollection("profiles", function (collectionApi) {
-  //   const result = collectionApi.getFilteredByTag("profile");
-  //   return result;
-  // });
+  config.addCollection("profilesColl", function (collectionApi) {
+    const result = collectionApi.getFilteredByTag("profile");
+    console.log({ result });
+    return result;
+  });
 
   return {
     dir: {
