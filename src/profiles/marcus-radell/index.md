@@ -1,4 +1,5 @@
 ---
+tags: "profile"
 name: "Marcus Rådell"
 dream: "To create great jobs for developers."
 phone: "+46725223325"
