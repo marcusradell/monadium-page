@@ -9,6 +9,7 @@ layout: "base.njk"
 {%for tag, totalDays in gigTags -%}
 <p>{{tag}}: {{totalDays}} days</p>
 {% endfor -%}
+
 <h2>Gigs</h2>
 <ol>
     {% for g in gigs -%}
@@ -41,3 +42,12 @@ layout: "base.njk"
     {% if teamIds.includes(t.data.id) %} <li><p><a href="{{ t.url }}" >{{ t.data.name }}</a></p></li> {% endif %}
     {% endfor -%}
 </ul>
+
+<div class="profile-footer">
+    <img class="profile-image" src="{{profileImageUrl}}" alt="Profile image"/>
+    <div class="profile-contact">
+        <p>{{name}}</p>
+        <p>{{phone}}</p>
+        <p>{{email}}</p>
+    </div>
+</div>

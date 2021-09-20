@@ -1,6 +1,8 @@
 ---
 name: "Marcus Rådell"
 dream: "To create great jobs for developers."
+phone: "+46725223325"
+email: "marcus@radell.net"
 gigs:
   - title: "Monadium.org"
     start: "2021-07"
