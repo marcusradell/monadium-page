@@ -4,8 +4,6 @@ module.exports = {
     profileImageUrl: (data) =>
       data.page.filePathStem.split("/index")[0] + "/profile.jpg",
     teamIds: (data) => {
-      console.log({ data });
-
       if (data.gigs === undefined) {
         return;
       }

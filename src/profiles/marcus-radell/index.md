@@ -200,6 +200,8 @@ gigs:
   - title: R2M
     start: 2013-08
     duration: 11
+
+    tags:
       - ANGULARJS
       - JAVASCRIPT
       - CSS

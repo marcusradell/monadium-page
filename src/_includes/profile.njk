@@ -6,7 +6,7 @@ layout: "base.njk"
 <strong>{{ dream }}</strong>
 
 <h2>Gig tags</h2>
-{%for tag, totalYears in gigTags -%}
+{%for tag, totalYears in gigTags | dictsort(false, 'value')|reverse -%}
 <p>{{tag}}: <{{totalYears}} years</p>
 {% endfor -%}
 
