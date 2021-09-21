@@ -1,10 +1,4 @@
-module.exports = (config) => {
-  config.addCollection("profilesData", function (collectionApi) {
-    const result = collectionApi.getFilteredByGlob("_data/profiles/*.js");
-    console.log({ result });
-    return result;
-  });
-
+module.exports = (eleventyConfig) => {
   return {
     dir: {
       input: "src",
