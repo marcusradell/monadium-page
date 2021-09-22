@@ -64,6 +64,10 @@ strong {
 }
 
 .navigation {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
   padding: 1rem;
   background: rgb(18, 14, 31);
 }
