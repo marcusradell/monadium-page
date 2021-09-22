@@ -20,5 +20,8 @@
   "homepage": "https://github.com/marcusradell/monadium-page#readme",
   "devDependencies": {
     "@11ty/eleventy": "^0.12.1"
+  },
+  "dependencies": {
+    "js-yaml": "^4.1.0"
   }
 }
