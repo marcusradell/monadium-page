@@ -5,6 +5,8 @@ body {
   background: rgb(25, 25, 25);
   min-height: 100vh;
   color: whitesmoke;
+  display: flex;
+  flex-direction: column;
 }
 
 h1,
@@ -16,6 +18,12 @@ h4 {
 
 a {
   color: steelblue;
+}
+
+strong {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #f4900c;
 }
 
 .logo-link {
@@ -38,15 +46,27 @@ a {
   align-items: center;
 }
 
-.profile {
-  padding: 1rem 0;
+.profile-footer {
+  margin-top: 1rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.profile-image {
+  display: block;
   height: 10rem;
   width: 10rem;
   border-radius: 50%;
 }
 
-strong {
+.profile-contact {
   font-size: 1.25rem;
-  font-weight: bold;
-  color: #f4900c;
+}
+
+.navigation {
+  margin-top: auto;
+  padding: 1rem;
+  background: rgb(18, 14, 31);
 }
