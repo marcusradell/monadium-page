@@ -13,9 +13,9 @@ layout: "base.njk"
     <p><em>Based on tags in gigs.</em></p>
 
     <section>
-        {%for tag, totalYears in experience | dictsort(false, 'value') |reverse -%}
-        <h3>{{tag}} {% if favorites.includes(tag) %} 🧡 {% endif %}</h3>
-        <p>{% if totalYears === 0 %} <1 year {% else %} {{totalYears}} years {%endif%}</p>
+        {%for exp in experiences -%}
+        <h3>{{exp.tag}} {% if favorites.includes(exp.tag) %} 🧡 {% endif %}</h3>
+        <p>{% if exp.totalYears === 0 %} <1 year {% else %} {{exp.totalYears}} years {%endif%}</p>
         {% endfor -%}
     </section>
 </section>

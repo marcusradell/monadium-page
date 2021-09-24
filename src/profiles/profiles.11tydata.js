@@ -12,7 +12,7 @@ module.exports = {
 
       return result;
     },
-    experience: (data) => {
+    experiences: (data) => {
       if (data.gigs === undefined) {
         return;
       }
@@ -23,7 +23,7 @@ module.exports = {
         .flatMap((g) => g.tags.map((t) => [t, g.duration, g.start]))
         .reduce((acc, [tag, duration, start]) => {
           if (!acc[tag]) {
-            acc[tag] = 0;
+            acc[tag] = { totalYears: 0, start };
           }
 
           let durationDays = 0;
@@ -35,17 +35,25 @@ module.exports = {
             durationDays = duration * 31;
           }
 
-          acc[tag] += durationDays / 365;
+          acc[tag].totalYears += durationDays / 365;
 
           return acc;
         }, {});
 
-      const result = Object.fromEntries(
-        Object.entries(exactDurations).map(([_, duration]) => [
-          _,
-          Math.floor(duration),
-        ])
-      );
+      const result = Object.entries(exactDurations)
+        .map(([tag, { totalYears, start }]) => ({
+          tag,
+          start,
+          totalYears: Math.floor(totalYears),
+        }))
+        .sort((a, b) => {
+          const favA = data.favorites.includes(a);
+          const favB = data.favorites.includes(b);
+          if (favA && favB) return 0;
+          if (favA) return -1;
+          return 1;
+        })
+        .sort((a, b) => new Date(b.totalYears) - new Date(a.totalYears));
 
       return result;
     },
