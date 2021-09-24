@@ -17,6 +17,7 @@ gigs:
     start: "2021-07"
     duration: "ONGOING"
     teamId: "b1f78784-f3e0-487f-856b-64226831d2e7"
+    description: "A platform for programmers and tech teams to collaborate and improve."
 
     tags:
       - GCP
@@ -38,10 +39,12 @@ gigs:
       - "Write highly modular code with reusable services and business logic that is simple to extract out to their own services."
       - "Conduct user research by interviewing companies and programmers on their recruitment needs."
       - "Mentoring junior developers on how to build a great portfolio to showcase their skills by using a project board, writing tests, and documenting properly."
+
   - title: "GetGeek"
     start: "2021-07"
     duration: 2
     teamId: "a7e79c85-edf7-4b8c-89d8-d73eb09ed29e"
+    description: "I helped clean up and structure the code and infrastructure."
 
     tags:
       - JAVASCRIPT
@@ -66,9 +69,11 @@ gigs:
       - "Implement features in the React Native app as well as in the backend."
       - "Support technicians with urgent bugs, and collaborate with other functions in the company to capture their needs and plan the technical backlog."
       - "Improve the CI/CD setup using GitHub Actions."
+
   - title: Vembla
     start: 2021-07
     duration: 3
+    description: "I worked with the tech team to setup personal goals, prioritize our backlog, and implement our Rust backend."
 
     tags:
       - RUST

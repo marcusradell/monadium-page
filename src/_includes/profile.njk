@@ -28,10 +28,12 @@ layout: "base.njk"
             <h3>{{g.title}}</h3>
             <p>{{g.start}} <em>({{g.duration}}{% if g.duration !== "ONGOING" %} months{% endif %})</em></p>
             
+            <p>{{g.description}}</p>
+
             <h4>Tags</h4>
             <ul>
-            {% for t in g.tags -%}
-            <li><p>{{t}}</p></li>
+            {% for tag in g.tags -%}
+            <li><p>{{tag}} {% if favorites.includes(tag) %} 🧡 {% endif %} </p></li>
             {% endfor -%}
             </ul>
 
