@@ -17,8 +17,6 @@ module.exports = {
         return;
       }
 
-      let js = 0;
-
       const exactDurations = data.gigs
         .flatMap((g) => g.tags.map((t) => [t, g.duration, g.start]))
         .reduce((acc, [tag, duration, start]) => {
@@ -59,7 +57,8 @@ module.exports = {
     },
 
     experienceStart: (data) => {
-      const start = data.gigs.sort((g) => g.start).reverse()[0].start;
+      const gigs = [...data.gigs];
+      const start = gigs.sort((g) => g.start).reverse()[0].start;
 
       const diff = Date.now() - new Date(start);
       const durationDays = Math.ceil(diff / (1000 * 60 * 60 * 24));
