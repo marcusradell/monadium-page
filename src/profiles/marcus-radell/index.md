@@ -1,7 +1,7 @@
 ---
 tags: profile
 name: "Marcus Rådell"
-dream: "To create great jobs for developers."
+dream: "Build healthy tech teams, mob program, and program in Rust."
 phone: "+46725223325"
 email: "marcus@radell.net"
 
