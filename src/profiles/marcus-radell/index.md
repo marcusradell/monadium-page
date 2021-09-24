@@ -43,7 +43,6 @@ gigs:
   - title: "GetGeek"
     start: "2021-07"
     duration: 2
-    teamId: "a7e79c85-edf7-4b8c-89d8-d73eb09ed29e"
     description: "Acting as the leading developer I helped clean up and structure the code and infrastructure."
 
     tags:
