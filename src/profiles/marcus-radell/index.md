@@ -220,6 +220,12 @@ gigs:
       - JAVASCRIPT
       - CSS
 
+    highlights:
+      - "Wrote a highly modular AngularJS project with recursive resolution of promises when working against a JSON:API."
+      - "Drove descisions around a newspaper's login experience."
+      - "Pair programmed together with the team designer, enabled by my custom build tools built on browserify and gulp."
+      - "Created stand-alone components in AngularJS which enabled me to work quickly when the dev environment went down."
+
   - title: R2M
     start: 2013-08
     duration: 11
@@ -229,6 +235,10 @@ gigs:
       - ANGULARJS
       - JAVASCRIPT
       - CSS
+
+    highlights:
+      - "Wrote a SPA calendar in AngularJS with adaptive UI depending on the screen size."
+      - "Used functional programming concepts like immutability, pure functions, and one-way data flows to reduce code complexity."
 
   - title: DQC
     start: 2011-03
