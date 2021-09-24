@@ -3,6 +3,7 @@ tags: profile
 name: "Marcus Rådell"
 dream: "Build healthy tech teams, mob program, and program in Rust."
 phone: "+46725223325"
+email: "marcus@radell.net"
 presentation: "https://player.vimeo.com/video/613787819?h=10e4fcd6ed"
 
 favorites:
