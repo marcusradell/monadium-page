@@ -21,6 +21,29 @@ layout: "base.njk"
 </section>
 
 <section>
+    <div class="profile-footer">
+        <iframe src="{{presentation}}" width="640" height="480" allow="autoplay" frameborder="0"></iframe>
+        <div class="profile-contact">
+            <p>{{name}}</p>
+            <p>{{phone}}</p>
+            <p>{{email}}</p>
+        </div>
+    </div>
+</section>
+
+<section>
+    <h2>Teams</h2>
+
+     <p><em>List of teams where the person has contributed.</em></p>
+
+    <ul>
+        {% for t in collections.team -%}
+        {% if teamIds.includes(t.data.id) %} <li><p><a href="{{ t.url }}" >{{ t.data.name }}</a></p></li> {% endif %}
+        {% endfor -%}
+    </ul>
+</section>
+
+<section>
     <h2>Gigs</h2>
     <ol>
         {% for g in gigs -%}
@@ -49,22 +72,3 @@ layout: "base.njk"
     </ol>
 </section>
 
-<section>
-    <h2>Teams</h2>
-    <ul>
-        {% for t in collections.team -%}
-        {% if teamIds.includes(t.data.id) %} <li><p><a href="{{ t.url }}" >{{ t.data.name }}</a></p></li> {% endif %}
-        {% endfor -%}
-    </ul>
-</section>
-
-<section>
-    <div class="profile-footer">
-        <iframe src="{{presentation}}" width="640" height="480" allow="autoplay" frameborder="0"></iframe>
-        <div class="profile-contact">
-            <p>{{name}}</p>
-            <p>{{phone}}</p>
-            <p>{{email}}</p>
-        </div>
-    </div>
-</section>
