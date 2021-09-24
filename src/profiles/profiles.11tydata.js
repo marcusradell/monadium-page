@@ -12,7 +12,7 @@ module.exports = {
 
       return result;
     },
-    gigTags: (data) => {
+    experience: (data) => {
       if (data.gigs === undefined) {
         return;
       }
@@ -43,7 +43,7 @@ module.exports = {
       const result = Object.fromEntries(
         Object.entries(exactDurations).map(([_, duration]) => [
           _,
-          Math.ceil(duration),
+          Math.floor(duration),
         ])
       );
 

@@ -16,6 +16,10 @@ h4 {
   text-transform: uppercase;
 }
 
+section + section {
+  margin: 5rem 0;
+}
+
 a {
   color: steelblue;
 }
