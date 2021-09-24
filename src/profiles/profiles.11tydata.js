@@ -49,5 +49,15 @@ module.exports = {
 
       return result;
     },
+
+    experienceStart: (data) => {
+      const start = data.gigs.sort((g) => g.start).reverse()[0].start;
+
+      const diff = Date.now() - new Date(start);
+      const durationDays = Math.ceil(diff / (1000 * 60 * 60 * 24));
+      const result = Math.floor(durationDays / 365);
+
+      return result;
+    },
   },
 };
