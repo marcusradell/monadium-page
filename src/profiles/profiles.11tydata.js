@@ -18,7 +18,7 @@ module.exports = {
       }
 
       const exactDurations = data.gigs
-        .flatMap((g) => g.tags.map((t) => [t, g.duration, g.start]))
+        .flatMap((g) => g.tags?.map((t) => [t, g.duration, g.start]) ?? [])
         .reduce((acc, [tag, duration, start]) => {
           if (!acc[tag]) {
             acc[tag] = { totalYears: 0, start };
