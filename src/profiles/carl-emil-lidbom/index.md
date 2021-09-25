@@ -4,7 +4,7 @@ name: "Carl Emil Lidbom"
 dream: "Create fascinating software"
 phone: "+46723638364"
 email: "lidbom.calle@outlook.com"
-presentation: "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+presentation: "https://player.vimeo.com/video/429388049?h=d6ef415a87"
 
 favorites:
   - C#/.Net
@@ -18,10 +18,6 @@ gigs:
     start: "2021-09"
     duration: 3
     description: "First period of internship contained within my education"
-    tags:
-      - TBA
-    highlights:
-      - "To be written"
 
   - title: "Kodexe, extra"
     start: "2021-03"
